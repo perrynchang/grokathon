@@ -171,7 +171,7 @@ export default function App() {
     setCourseFilter("all");
     setDisplay("cards");
     setTourStep(null);
-    notify("Fresh start. Your demo is ready to record.");
+    notify("Example sessions, pings, and friends restored.");
   };
 
   const renderCard = (session: StudySession) => (
@@ -652,7 +652,7 @@ export default function App() {
               StudyPing <span>·</span> Demo mode
             </span>
             <button onClick={() => setOverlay("guide")}>
-              Demo guide
+              How it works
               <ArrowUpRight size={13} />
             </button>
           </footer>
@@ -856,7 +856,7 @@ export default function App() {
             </div>
             <div className="demo-settings">
               <div>
-                <strong>A fresh take?</strong>
+                <strong>Restore sample data</strong>
                 <p>Restore the example sessions, pings, and friends.</p>
               </div>
               <button
@@ -877,7 +877,7 @@ export default function App() {
       {overlay === "guide" && (
         <Modal title="Quick tour" onClose={closeOverlay}>
           <div className="guide-body">
-            <p className="modal-intro">See how StudyPing works in a minute.</p>
+            <p className="modal-intro">Find a group and make a plan to study.</p>
             {[
               {
                 icon: <Compass size={20} />,
@@ -921,7 +921,7 @@ export default function App() {
               <ArrowRight size={17} />
             </button>
             <div className="guide-foot">
-              <span>Example friends. Real interactions.</span>
+              <span>Sample data. Local interactions.</span>
               <button className="text-button" onClick={reset}>
                 <RotateCcw size={13} />
                 Reset demo
@@ -936,7 +936,7 @@ export default function App() {
             <Sparkles size={19} />
           </span>
           <div>
-            <span>THE 60-SECOND TOUR · {tourStep + 1}/4</span>
+            <span>QUICK TOUR · {tourStep + 1}/4</span>
             <strong>
               {
                 [
@@ -961,7 +961,7 @@ export default function App() {
             onClick={() => {
               if (tourStep === 3) {
                 setTourStep(null);
-                notify("You’re ready. Go make a great demo!");
+                notify("You’re ready to find a study group.");
               } else {
                 setTourStep(tourStep + 1);
                 if (tourStep === 1) {

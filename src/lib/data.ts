@@ -191,7 +191,7 @@ export const people: Person[] = [
 
 const minute = 60_000;
 
-/** Fresh relative times make the recording demo useful whenever it is reset. */
+/** Fresh relative times keep sample sessions current after a reset. */
 export function createDemoState(now = Date.now()): StudyState {
   const laterSlots = laterTodaySlots(now);
   const laterStart = laterSlots[Math.min(3, laterSlots.length - 1)];

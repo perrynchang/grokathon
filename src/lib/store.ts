@@ -107,7 +107,7 @@ function readState(storage?: StorageAdapter): StudyState | undefined {
       ...location,
       ...locations.find((current) => current.id === location.id),
     }));
-    // Personalize existing recordings without resetting sessions or messages.
+    // Update the sample profile without resetting sessions or messages.
     state.people = state.people.map((person) =>
       person.id === state.meId && person.name === "Alex Kim"
         ? { ...person, ...demoIdentity }

@@ -68,18 +68,6 @@ npm run preview
 
 The build command checks TypeScript and writes the static application to `dist/`. Fonts and illustrations are bundled locally.
 
-## Suggested evaluation walkthrough
-
-1. On **Campus**, open **My courses** to see how course selection controls the feed.
-2. Find Nora’s **Organic Chemistry · Exam practice, together** session under **Now**. Select **Join** to save a spot without adding Nora as a friend.
-3. Check the time, meeting place, and participants. Open **Chat** to see the meeting instructions and send a local demo message.
-4. Close the session view and select **Start studying**. Choose **Later today**, a time, and **Classmates welcome**, then select **Schedule session**.
-5. Find the new group under **Later today** or return to it through **Sessions**.
-
-**Reset demo**, available in profile/settings and the footer’s **Demo guide**, restores the starting scenario with fresh session times. To explore invitations, select a friend under **Additional options** when creating a session; **Send demo reply** then simulates an invited friend’s response. No real notification is sent.
-
-A timed walkthrough is included in the [60-second demo script](DEMO_SCRIPT.md).
-
 ## Implementation and scope
 
 The app is built with **React 19, TypeScript, and Vite**, with Lucide icons and responsive CSS. Session creation, scheduling, visibility, capacity, replies, chat, friend changes, course selection, and preferences are implemented in the local application. Data persists in browser `localStorage` and synchronizes between tabs on the same origin.
@@ -108,7 +96,6 @@ src/
   components/              Interface components and campus illustration
   lib/                     Typed demo data, session rules, state, and tests
 docs/images/               Grok conversation screenshots shown above
-DEMO_SCRIPT.md             Timed demonstration walkthrough
 StudyPing_Product_Plan.pdf  Original product proposal
 ```
 
