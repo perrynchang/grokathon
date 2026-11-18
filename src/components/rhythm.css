@@ -1,0 +1,296 @@
+.rhythm-view {
+  color: #27272a;
+}
+.rhythm-heading {
+  margin-bottom: 36px;
+}
+.rhythm-heading h1 {
+  margin: 0 0 9px;
+  font-size: 32px;
+  font-weight: 650;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.rhythm-heading p {
+  margin: 0;
+  color: #737378;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.rhythm-focus {
+  display: flex;
+  width: min(100%, 460px);
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 32px 32px;
+  border: 1px solid #e8e8e5;
+  border-radius: 18px;
+  background: #fff;
+}
+.rhythm-duration {
+  display: flex;
+  gap: 4px;
+  border-radius: 9px;
+  background: #f4f4f2;
+  padding: 4px;
+}
+.rhythm-duration button {
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  padding: 8px 20px;
+  color: #737378;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.rhythm-duration button.rhythm-duration-active {
+  background: #fff;
+  color: #27272a;
+  box-shadow: 0 1px 3px #27272a0a;
+}
+.rhythm-timer-ring {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 22px 0 25px;
+}
+.rhythm-timer-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.rhythm-timer-ring circle {
+  fill: none;
+  stroke-width: 2;
+}
+.rhythm-timer-track {
+  stroke: #efefeb;
+}
+.rhythm-timer-progress {
+  stroke: #e97949;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s linear;
+}
+.rhythm-clock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rhythm-clock > span {
+  color: #27272a;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+}
+.rhythm-clock small {
+  margin-top: 10px;
+  color: #737378;
+  font-size: 13px;
+}
+.rhythm-focus-actions {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+.rhythm-focus-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 152px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  background: #e97949;
+  padding: 11px 22px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.rhythm-focus-start:hover {
+  background: #d96c3e;
+}
+.rhythm-focus-reset {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #e8e8e5;
+  border-radius: 9px;
+  background: #fff;
+  color: #737378;
+  cursor: pointer;
+}
+.rhythm-focus-reset:hover {
+  background: #fafaf8;
+}
+.rhythm-company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: min(100%, 460px);
+  margin: 21px auto 31px;
+  font-size: 13px;
+  color: #737378;
+}
+.rhythm-company button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  background: none;
+  padding: 5px 0;
+  color: #525258;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rhythm-company button:hover {
+  color: #d96c3e;
+}
+.rhythm-history {
+  width: min(100%, 460px);
+  margin: 0 auto;
+  border-top: 1px solid #e8e8e5;
+}
+.rhythm-history summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  list-style: none;
+  color: #737378;
+  font-size: 13px;
+  cursor: pointer;
+}
+.rhythm-history summary::-webkit-details-marker {
+  display: none;
+}
+.rhythm-history[open] summary svg {
+  transform: rotate(180deg);
+}
+.rhythm-history-content {
+  padding: 0 0 18px;
+}
+.rhythm-demo-label {
+  margin: 0 0 20px;
+  color: #737378;
+  font-size: 13px;
+}
+.rhythm-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.rhythm-stats strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+}
+.rhythm-stats span {
+  color: #737378;
+  font-size: 13px;
+}
+.rhythm-chart {
+  display: flex;
+  gap: 19px;
+  height: 134px;
+}
+.rhythm-bar-button {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+.rhythm-bar-space {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 28px);
+}
+.rhythm-bar {
+  display: block;
+  width: 100%;
+  max-width: 35px;
+  border-radius: 4px 4px 2px 2px;
+  background: #e2e2dc;
+  transition: background 0.15s;
+}
+.rhythm-bar-selected .rhythm-bar {
+  background: #e97949;
+}
+.rhythm-bar-button:hover .rhythm-bar {
+  background: #b7b7b0;
+}
+.rhythm-bar-selected:hover .rhythm-bar {
+  background: #d96c3e;
+}
+.rhythm-day {
+  margin-top: 12px;
+  color: #737378;
+  font-size: 13px;
+}
+.rhythm-chart-caption {
+  margin: 19px 0 0;
+  color: #737378;
+  font-size: 13px;
+}
+.rhythm-sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.rhythm-view button:focus-visible,
+.rhythm-history summary:focus-visible {
+  outline: 2px solid #e97949;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .rhythm-heading {
+    margin-bottom: 26px;
+  }
+  .rhythm-heading h1 {
+    font-size: 28px;
+  }
+  .rhythm-focus {
+    padding: 25px 18px 28px;
+  }
+  .rhythm-timer-ring {
+    width: 230px;
+    height: 230px;
+    max-width: 100%;
+  }
+  .rhythm-clock > span {
+    font-size: 48px;
+  }
+  .rhythm-chart {
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rhythm-timer-progress {
+    transition: none;
+  }
+}
