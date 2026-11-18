@@ -14,6 +14,12 @@ Grok was used during concept exploration and product refinement. The conversatio
 
 Grok’s role in this submission was product ideation and feedback. The application does not call the Grok API or require an API key.
 
+## Demo video
+
+[Watch the StudyPing screen recording (MOV)](Screen%20Recording%202026-11-17%20at%207.40.54%E2%80%AFPM.mov)
+
+The recording is included in this submission folder and shows the app in use.
+
 ## Overview
 
 **Find your study people today.**
